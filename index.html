@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約池自動化助手</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.2em;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .feature {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .feature h2 {
+            color: #4CAF50;
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .download {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #333;
+            color: white;
+        }
+        .download a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .contact {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00C300;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        @media (min-width: 768px) {
+            .features-grid {
+                display: flex;
+                gap: 20px;
+            }
+            .feature {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
 
+    <!-- 標題區域 -->
+    <header>
+        <h1>預約池自動化助手</h1>
+        <p>智能管理您的預約，提升工作效率</p>
+    </header>
+
+    <!-- 主要內容容器 -->
+    <div class="container">
+
+        <!-- 功能介紹區域 -->
+        <section class="features-grid">
+            <div class="feature">
+                <h2>15秒內自動更新預約池任務</h2>
+                <img src="images/auto-update.png" alt="自動更新預約池">
+                <p>應用程式每15秒自動刷新預約池，確保您隨時掌握最新的任務資訊，不會錯過任何機會。</p>
+            </div>
+            <div class="feature">
+                <h2>設定金額，符合金額語音通知播報</h2>
+                <img src="images/voice-notification.png" alt="語音通知">
+                <p>您可以自訂最低接單金額，當有符合條件的任務出現時，應用會自動通過文字轉語音（TTS）播報通知您。</p>
+            </div>
+            <div class="feature">
+                <h2>詳細通知內容</h2>
+                <img src="images/detailed-notification.png" alt="詳細通知">
+                <p>通知內容包含車資金額、時間以及上下車地址，讓您在接單前能夠充分了解任務詳情。</p>
+            </div>
+            <div class="feature">
+                <h2>連續播報三次</h2>
+                <img src="images/repeat-notification.png" alt="連續播報">
+                <p>為確保您不會錯過重要通知，應用會連續播報三次相關資訊，提供多重提醒。</p>
+            </div>
+            <div class="feature">
+                <h2>符合金額停止更新預約池40秒</h2>
+                <img src="images/pause-updates.png" alt="暫停更新">
+                <p>當有符合條件的金額時，應用會停止預約池的自動更新40秒，以便您有時間承接任務。</p>
+            </div>
+        </section>
+
+        <!-- 如何運作區域 -->
+        <section class="feature">
+            <h2>如何運作</h2>
+            <p>預約池自動化助手設計簡單易用，以下是其運作流程：</p>
+            <ol>
+                <li><strong>自動更新</strong>：應用每15秒自動刷新預約池，抓取最新的可用任務。</li>
+                <li><strong>設定金額</strong>：您可以在設定中輸入您希望接單的最低金額。</li>
+                <li><strong>語音通知</strong>：當有符合條件的任務出現時，應用會自動播報相關資訊，包括金額、時間及上下車地址。</li>
+                <li><strong>連續播報</strong>：為確保不會錯過通知，資訊將被連續播報三次。</li>
+                <li><strong>暫停更新</strong>：在符合條件的金額被播報後，應用將暫停預約池的自動更新40秒，讓您有時間承接任務。</li>
+            </ol>
+        </section>
+
+        <!-- 下載區域 -->
+        <section class="download">
+            <h2>立即下載</h2>
+            <p>開始使用預約池自動化助手，提升您的工作效率。</p>
+            <a href="https://drive.google.com/file/d/1YkaKnUOsB3hONn8W1h3OObRIAZFLI65C/view?usp=drive_link" target="_blank">下載預約池語音通知自動更新_v1.0.06.apk</a>
+        </section>
+
+        <!-- 聯繫我們區域 -->
+        <section class="contact">
+            <h2>聯繫我們</h2>
+            <p>加入我們的 LINE 社群，獲取最新資訊與支援：</p>
+            <a href="https://line.me/ti/g2/EC-9qY2wGRn6vaO0qguUIoTpqvSamepO9479nw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">加入 LINE 社群</a>
+        </section>
+
+    </div>
+
+    <!-- 頁尾區域 -->
+    <footer>
+        <p>&copy; 2024 預約池自動化助手. 版權所有。</p>
+    </footer>
+
+</body>
+</html>
